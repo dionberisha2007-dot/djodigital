@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | DJO DIGITAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        // Apply saved theme before page renders to prevent flicker
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <input type="checkbox" id="theme-switch" hidden>
+
+    <div class="app-wrapper">
+        
+        <label for="theme-switch" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+            <svg class="icon-sun" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </label>
+
+        <div class="bg-mesh"></div>
+        <div class="bg-grid"></div>
+
+        <nav>
+            <div class="container nav-container">
+                <a href="index.html" class="logo">DJO <span>DIGITAL</span></a>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Platform</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="index.html#about">Innovation</a></li>
+                    <li><a href="index.html#portfolio">Showcase</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <a href="index.html#contact" class="btn btn-secondary nav-cta">Get Started</a>
+                    
+                    <label for="menu-toggle" class="hamburger">
+                        <span></span><span></span><span></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+
+        <header class="page-header container">
+            <div class="badge">Comprehensive Approach</div>
+            <h1>Our <span class="gradient-text">Solutions</span></h1>
+            <p>We architect full-funnel digital machinery designed to capture, convert, and scale. Discover the cutting-edge capabilities we bring to modern startups and enterprises.</p>
+        </header>
+
+        <section class="solutions-page-content">
+            <div class="container">
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Full-Stack SaaS</h3>
+                        <p>Scalable, secure, and modern web applications built on React, Node, and serverless architectures tailored to your enterprise.</p>
+                        <ul>
+                            <li>Custom Web Applications</li>
+                            <li>API Integration & Architecture</li>
+                            <li>Database Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </div>
+                        <h3>Technical SEO</h3>
+                        <p>Deep algorithmic optimization, programmatic content strategies, and architecture restructuring for dominant search visibility.</p>
+                        <ul>
+                            <li>Core Web Vitals Audits</li>
+                            <li>Programmatic SEO Frameworks</li>
+                            <li>Schema & Entity Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <h3>Performance Marketing</h3>
+                        <p>Data-aggressive ad campaigns engineered for lowest CAC and highest LTV across Google, Meta, and emerging channels.</p>
+                        <ul>
+                            <li>Omnichannel Advertising</li>
+                            <li>Conversion Rate Optimization</li>
+                            <li>Advanced Tracking Pipelines</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                        </div>
+                        <h3>UI/UX Systems</h3>
+                        <p>Pixel-perfect, conversion-optimized interfaces that feel native, intuitive, and ruthlessly aligned with user psychology.</p>
+                        <ul>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Design System Creation</li>
+                            <li>User Flow Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
+                        <h3>Cloud Security & DevOps</h3>
+                        <p>Bank-grade security and automated deployment pipelines to ensure your digital assets are impenetrable and fast.</p>
+                        <ul>
+                            <li>CI/CD Automation</li>
+                            <li>Penetration Testing</li>
+                            <li>Serverless Deployments</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <h3>Enterprise E-Commerce</h3>
+                        <p>High-volume, headless storefronts integrated deeply with your inventory, CRM, and marketing technology stack.</p>
+                        <ul>
+                            <li>Headless Shopify / Commerce Layer</li>
+                            <li>Custom Payment Gateways</li>
+                            <li>PIM & ERP Integrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client <span class="gradient-text">Success Stories</span></h2>
+                    <p>Don't just take our word for it. See what our enterprise partners say.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="quote-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <p class="testimonial-text">"DJO DIGITAL completely overhauled our monolithic architecture into a modern, lightning-fast React application. Our conversion rates spiked by 40% in the first month."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><img src="https://i.pravatar.cc/100?img=1" alt="Sarah J."></div>
+                            <div class="author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>CTO at Aura Financial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="quote-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <p class="testimonial-text">"The technical SEO strategy implemented by DJO took us from page 5 to dominating the top 3 spots for our most competitive, high-intent enterprise keywords."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><img src="https://i.pravatar.cc/100?img=3" alt="Marcus T."></div>
+                            <div class="author-info">
+                                <h4>Marcus Thorne</h4>
+                                <span>VP of Marketing, Lumina</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="quote-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <p class="testimonial-text">"Finding an agency that actually understands web3 and cloud-native scaling is rare. DJO deployed a seamless backend infrastructure that handles massive volume."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><img src="https://i.pravatar.cc/100?img=8" alt="David R."></div>
+                            <div class="author-info">
+                                <h4>David Reynolds</h4>
+                                <span>Founder, Nexus Protocol</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Ready to Scale Your Infrastructure?</h2>
+                    <p>Let's build a digital ecosystem that drives real revenue. Schedule a technical discovery call with our lead engineers today.</p>
+                    <a href="index.html#contact" class="btn btn-primary">Start Your Project <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
