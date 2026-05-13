@@ -297,6 +297,43 @@ nav {
     color: var(--accent);
 }
 
+.logo-with-icon {
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.mobile-menu-logo {
+    width: 32px;
+    height: 32px;
+    color: var(--accent);
+    margin-right: 1rem;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-logo {
+        display: block;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 2.5rem;

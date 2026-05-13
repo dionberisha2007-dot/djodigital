@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <!-- Top left circle -->
+    <circle cx="55" cy="55" r="28" fill="currentColor"/>
+    
+    <!-- Middle circle -->
+    <circle cx="100" cy="100" r="28" fill="currentColor"/>
+    
+    <!-- Bottom right circle -->
+    <circle cx="145" cy="145" r="28" fill="currentColor"/>
+    
+    <!-- Right curved path -->
+    <path d="M 145 75 Q 180 75 180 110 Q 180 145 145 145" fill="none" stroke="currentColor" stroke-width="30" stroke-linecap="round"/>
+    
+    <!-- Left curved connecting path -->
+    <path d="M 75 55 Q 50 80 50 110 Q 50 140 75 145" fill="none" stroke="currentColor" stroke-width="30" stroke-linecap="round"/>
+  </g>
+</svg>
